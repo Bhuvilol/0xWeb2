@@ -53,3 +53,45 @@ for (let i = 0; i <= 10; i++) {
     addition+=i;
     console.log(addition);
 }
+
+
+let user1 ={
+    name: "Bhabesh",
+    age:21,
+}
+let bayasa = {
+    gender: "male"
+}
+
+function greeting(user) {
+    console.log("Hi "+user.name+" your age is "+ user.age+". You are a "+bayasa.gender);
+}
+greeting(user1);
+
+let arr = ["Bhabesh",21,{
+    title: "Behera",
+    age:21,
+    cities:["Bhonsar","Kharagpur","Sambalpur",{
+        country:"India",
+        city:"Delhi"
+    }]
+}]
+console.log(object);
+//create a function that takes an array of objects as input 
+//and returns the users whose age>18 and are male.
+const pepul = [{
+    name:"Bhabesh",
+    age:21,
+    gender:"male"
+},{
+    name:"Nibedita",
+    age:21,
+    gender:"female"
+},{
+    name:"Sahil",
+    age:19,
+    gender:"male"
+}]
+function data(arr) {
+    
+}
