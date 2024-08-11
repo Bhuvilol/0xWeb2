@@ -1,2 +1,10 @@
-const data1 = fsa.readFile("a.txt","utf8",print);
-// const data2 = fsa.readFile("b.txt","utf8",print);
+function setTimeoutPromisified(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+//   }
+  
+//   function callback() {
+//       console.log("3 seconds have passed");
+//   }
+  
+//   setTimeoutPromisified(3000).then(callback)
+  
