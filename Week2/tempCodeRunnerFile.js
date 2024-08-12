@@ -1,10 +1,23 @@
-function setTimeoutPromisified(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-//   }
-  
-//   function callback() {
-//       console.log("3 seconds have passed");
-//   }
-  
-//   setTimeoutPromisified(3000).then(callback)
-  
+const fsa = require('fs');
+
+function random(){
+
+}
+let p = new Promise(random);
+function callback(){
+    console.log("Promise succeeded")
+}
+p.then(callback)
+console.log(p);
+
+
+
+function readFilePromisified(fsa) {
+    return new Promise(resolve => fsa.readFile("a.txt","utf8",(err,data)));
+}
+function readFile(fsa) {
+    fsa.readFile("a.txt","utf8",(err,data) => {
+        console.log(data);
+        console.log(err);
+    });
+}
